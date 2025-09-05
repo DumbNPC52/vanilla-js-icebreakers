@@ -1,0 +1,85 @@
+/* Universal CSS */
+* {
+  box-sizing: border-box;
+}
+
+/* General CSS */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main body CSS */
+.click-btn,
+.two-btns,
+.shop-btns {
+  margin: 10px 10px;
+}
+
+.text {
+  margin: 25px 10px;
+  line-height: 24px;
+  color: rgb(96, 96, 96);
+}
+
+.idk-text {
+  color: dodgerblue;
+  font-weight: 550;
+  cursor: pointer;
+  transition: color 0.5 ease;
+}
+
+.idk-text:hover {
+  color: aqua;
+}
+
+.click-btn,
+.name-btn,
+.fav-food-btn,
+.add-btn,
+.buy-btn {
+  font-weight: 550;
+  padding: 8px 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.click-btn,
+.name-btn,
+.fav-food-btn {
+  background-color: dodgerblue;
+  color: whitesmoke;
+  transition: opacity 0.75s ease;
+}
+
+.click-btn:hover,
+.name-btn:hover,
+.fav-food-btn:hover {
+  opacity: 0.7;
+}
+
+.add-btn {
+  background-color: yellow;
+  margin-right: 20px;
+  transition: box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.add-btn:hover {
+  background-color: rgb(243, 199, 77);
+  box-shadow: 0 2px 4px 2px rgba(218, 218, 218, 0.5);
+}
+
+.buy-btn {
+  background-color: orange;
+  transition: opacity 0.25s ease, box-shadow 0.25s ease;
+}
+
+.buy-btn:hover {
+  opacity: 0.75;
+  box-shadow: 0 2px 4px 2px rgba(218, 218, 218, 0.5);
+}

@@ -1,0 +1,47 @@
+/* Universal CSS */
+* {
+  box-sizing: border-box;
+}
+
+/* General CSS */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main body CSS */
+p {
+  margin: 10px 15px;
+  line-height: 24px;
+  color: rgb(96, 96, 96);
+}
+
+.add-to-cart-btn,
+.buy-now-btn {
+  font-weight: 550;
+  padding: 8px 20px;
+  margin: 10px 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.add-to-cart-btn {
+  background-color: rgb(255, 238, 0);
+  margin-right: 20px;
+  transition: box-shadow 0.75s ease;
+}
+
+.buy-now-btn {
+  background-color: rgb(245, 171, 33);
+  transition: box-shadow 0.75s ease;
+}
+
+.add-to-cart-btn:hover,
+.buy-now-btn:hover {
+  box-shadow: 0 2px 4px 2px rgba(218, 218, 218, 0.5);
+}
