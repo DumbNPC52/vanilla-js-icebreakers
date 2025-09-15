@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="NPC" />
+    <meta
+      name="description"
+      content="Mini Project - Cart Quantity using JS Variables"
+    />
+    <meta
+      name="keywords"
+      content="JavaScript, JS, Variables, Cart Quantity, Mini Project"
+    />
+    <title>Cart Quantity Mini Project - Updated</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Mini Cart Quantity Project -->
+    <p class="cart-quantity-text">
+      Cart Quantity Mini Project Using JS Variables
+    </p>
+
+    <button
+      class="show-btn"
+      onclick="console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      Show Quantity
+    </button>
+    <button
+      class="add-btn"
+      onclick="
+        cartQuantity ++;
+        console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      Add to Cart
+    </button>
+    <button
+      class="add-two-btn"
+      onclick="
+        cartQuantity += 2;
+        console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      +2
+    </button>
+    <button
+      class="add-three-btn"
+      onclick="
+        cartQuantity += 3;
+        console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      +3
+    </button>
+    <button
+      class="add-four-btn"
+      onclick="
+        cartQuantity += 4;
+        console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      +4
+    </button>
+    <button
+      class="add-five-btn"
+      onclick="
+        cartQuantity += 5;
+        console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      +5
+    </button>
+    <button
+      class="remove-btn"
+      onclick="
+        cartQuantity --;
+        console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      Remove from Cart
+    </button>
+    <button
+      class="remove-two-btn"
+      onclick="
+        cartQuantity -= 2;
+        console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      -2
+    </button>
+    <button
+      class="remove-three-btn"
+      onclick="
+        cartQuantity -= 3;
+        console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      -3
+    </button>
+    <button
+      class="reset-btn"
+      onclick="
+        cartQuantity = 0;
+        console.log('Cart was reset.');
+        console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      Reset
+    </button>
+
+    <!-- Javascript code block -->
+    <script>
+      // Javascript code goes here...
+      let cartQuantity = 0;
+    </script>
+  </body>
+</html>
