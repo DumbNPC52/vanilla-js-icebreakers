@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="NPC">
+  <meta name="description" content="Practising Javascript Booleans and If Statements">
+  <meta name="keywords" content="HTML, CSS, Javascript, Conditionals, Booleans, If Statements">
+  <title>Booleans & If-Statements Exercises</title>
+  <!-- Link to CSS File -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Main Section -->
+   <p>Booleans & If Statements</p>
+
+
+  <!-- Javascript Section -->
+  <script>
+    // Quiz #1
+    let timeInHours = 12;
+    let name = 'NPC';
+
+    if (timeInHours >= 6 && timeInHours < 12) {
+      console.log('Good morning!');
+    } else if (timeInHours >= 12 && timeInHours <= 17) {
+      console.log('Good afternoon!');
+    } else {
+      console.log('Good night!');
+    }
+
+    if (timeInHours >= 6 && timeInHours < 12) {
+      console.log(`Good morning ${name}!`);
+    } else if (timeInHours >=12 && timeInHours <= 17) {
+      console.log(`Good afternoon ${name}!`);
+    } else {
+      console.log(`Good night ${name}!`);
+    }
+
+    // Quiz #2
+    let age = 5;
+    const isHoliday = false;
+
+    if (age <= 6 || age >= 65) {
+      console.log('Discount');
+    } else {
+      console.log('No discount');
+    }
+
+    if ((age <= 6 || age >= 65) && !isHoliday) {
+      console.log('Discount');
+    } else {
+      console.log('No discount');
+    }
+  </script>
+</body>
+</html>
