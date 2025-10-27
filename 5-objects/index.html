@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="NPC">
+  <meta name="description" content="A collection of icebreaker activities to help learners understand JavaScript objects.">
+  <meta name="keywords" content="Javascript, Objects">
+  <title>Javascript Objects Icebreakers</title>
+</head>
+<body>
+  <h1>Javascript Objects Icebreakers</h1>
+
+  <!-- Javascript Code Block -->
+  <script>
+    // Exercise #01;
+    const theProduct = {
+      'name': 'Basketball',
+      ['price']: 2095,
+    }
+    console.log(theProduct);
+
+    theProduct.price = theProduct.price + 500;
+    console.log(theProduct);
+
+    theProduct['delivery-time'] = '3 days';
+    console.log(theProduct);
+
+    // Exercise #02;
+    function comparePrice(productA, productB) {
+      if (productA.price < productB.price) {
+        return productA;
+      } else {
+        return productB;
+      }
+    };
+
+    const productA = {
+      name: 'Basketball',
+      price: 2095,
+    };
+
+    const productB = {
+      name: 'Soccer Ball',
+      price: 1500,
+    };
+
+    comparePrice(productA, productB);
+    console.log(comparePrice(productA, productB));
+
+    // Exercise #03;
+    function isSameCharacter(charA, charB) {
+      return charA.name === charB.name && charA.age === charB.age;
+    };
+
+    const charA = {
+      name: 'Ashen Hood',
+      age: 20,
+    };
+
+    const charB = {
+      name: 'Ashen Hood',
+      age: 20,
+    };
+
+    const charC = {
+      name: 'Mecha Pig',
+      age: 10,
+    };
+
+    console.log(isSameCharacter(charA, charB));
+    console.log(isSameCharacter(charA, charC));
+    console.log(isSameCharacter(charB, charC));
+
+    // Exercise #04; Converting a string 'I Am Error 404' to all lowercase;
+    const characterName = 'I Am Error 404';
+    const lowerCaseName = characterName.toLowerCase();
+    console.log(lowerCaseName);
+
+    // Exercise #05; How to repeat a string 'Exterminate' many times;
+    const catchPhrase = 'Exterminate ';
+    const repeatedPhrase = catchPhrase.repeat(5);
+    console.log(repeatedPhrase);
+  </script>
+</body>
+</html>
